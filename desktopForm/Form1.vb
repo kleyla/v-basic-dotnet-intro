@@ -88,4 +88,82 @@
             MsgBox("Failed")
         End If
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim temperature As Integer = txtCase.Text
+        Select Case temperature
+            Case Is = 0
+                MsgBox("Freezing")
+            Case Is < 0
+                MsgBox("Sub Zero")
+            Case Else
+                MsgBox("Ok")
+        End Select
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim count As Integer
+        For count = 1 To 10 Step 5
+            Beep()
+            Threading.Thread.Sleep(3000)
+            'MsgBox("Goes " & count)
+        Next
+        MsgBox("Down")
+        For count = 12 To 2 Step -5
+            Beep()
+            Threading.Thread.Sleep(3000)
+            'MsgBox("Goes " & count)
+        Next
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        Dim count As Integer
+        Do While count <= 3
+            MsgBox("hi " & count)
+            count += 1
+        Loop
+        MsgBox("Next")
+        Do
+            count += 1
+            MsgBox("Hii " & count)
+
+        Loop Until count = 6
+        MsgBox("Next")
+        Do Until count = 8
+            count += 1
+            MsgBox("Hii " & count)
+
+        Loop
+        MsgBox("Next")
+        Do
+            count += 1
+            MsgBox("Hiiii " & count)
+
+        Loop While count = 10
+        MsgBox("Done")
+
+    End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        Dim name As String
+        Do While name <> "karen"
+            name = InputBox("Ingrese la clave")
+        Loop
+        MsgBox("Bienvenida " & name)
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        Dim fruits(4) As String
+        fruits(0) = "Apple"
+        fruits(1) = "Banana"
+        fruits(2) = "Pineapple"
+        fruits(3) = "Mango"
+        fruits(4) = "Strawberry"
+        MsgBox("Cantidad de frutas:  " & fruits.Length)
+        Dim i As Integer
+        For i = 0 To 4
+            MsgBox(fruits(i))
+        Next
+
+    End Sub
 End Class

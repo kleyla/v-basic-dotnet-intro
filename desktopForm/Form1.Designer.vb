@@ -35,6 +35,12 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.txtConvert = New System.Windows.Forms.TextBox()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.txtCase = New System.Windows.Forms.TextBox()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button11 = New System.Windows.Forms.Button()
+        Me.Button12 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btn1
@@ -149,11 +155,69 @@ Partial Class Form1
         Me.txtConvert.Size = New System.Drawing.Size(100, 20)
         Me.txtConvert.TabIndex = 12
         '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(151, 251)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(125, 37)
+        Me.Button8.TabIndex = 13
+        Me.Button8.Text = "Case"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'txtCase
+        '
+        Me.txtCase.Location = New System.Drawing.Point(151, 212)
+        Me.txtCase.Name = "txtCase"
+        Me.txtCase.Size = New System.Drawing.Size(100, 20)
+        Me.txtCase.TabIndex = 14
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(151, 295)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(75, 23)
+        Me.Button9.TabIndex = 15
+        Me.Button9.Text = "For Next"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(151, 325)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(75, 23)
+        Me.Button10.TabIndex = 16
+        Me.Button10.Text = "While"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button11
+        '
+        Me.Button11.Location = New System.Drawing.Point(314, 12)
+        Me.Button11.Name = "Button11"
+        Me.Button11.Size = New System.Drawing.Size(109, 45)
+        Me.Button11.TabIndex = 17
+        Me.Button11.Text = "Condition controlled loop"
+        Me.Button11.UseVisualStyleBackColor = True
+        '
+        'Button12
+        '
+        Me.Button12.Location = New System.Drawing.Point(314, 75)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(75, 23)
+        Me.Button12.TabIndex = 18
+        Me.Button12.Text = "Array"
+        Me.Button12.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.Button11)
+        Me.Controls.Add(Me.Button10)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.txtCase)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.txtConvert)
         Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
@@ -187,4 +251,10 @@ Partial Class Form1
     Friend WithEvents Button6 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents txtConvert As TextBox
+    Friend WithEvents Button8 As Button
+    Friend WithEvents txtCase As TextBox
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button11 As Button
+    Friend WithEvents Button12 As Button
 End Class
